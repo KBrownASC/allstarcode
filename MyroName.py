@@ -19,16 +19,16 @@ def drawK(size):
 def drawB(size):
     turnBy(90,"deg")
     forward(2,1)
-    motors(size*5,0,.5)
+    motors(30,-3,1)
     turnBy(270,"deg")
-    motors(size*5,0,.5)
+    motors(30,-3,1)
 
 
 
 
 #Code- actual work being done
 penDown()
-drawK(1)
+#drawK(1)
 penUp()
 penDown()
 drawB(8)
