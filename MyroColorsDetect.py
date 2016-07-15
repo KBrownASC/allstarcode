@@ -4,13 +4,13 @@ from random import *
 
 width = 500
 height = 500
-sim = Simulation("Maze World", width, height, Color("gray"))
+sim = Simulation("Myro Colors", width, height, Color("purple"))
 
 #outside walls
-sim.addWall((10, 10), (490, 20), Color("black"))
-sim.addWall((10, 10), (20, 490), Color("black"))
-sim.addWall((480, 10), (490, 490), Color("black"))
-sim.addWall((10, 480), (490, 490), Color("black"))
+sim.addWall((10, 10), (490, 20), Color("brown"))
+sim.addWall((10, 10), (20, 490), Color("brown"))
+sim.addWall((480, 10), (490, 490), Color("brown"))
+sim.addWall((10, 480), (490, 490), Color("brown"))
 
 #blue spot
 poly = Circle((50, 50), 45)
@@ -111,7 +111,7 @@ while blueValue<1:
     getWidth(pic)
     show(pic)
     if findColorSpot(pic,3):
-        motors(1,-1,.5)
+        motors(1,-1,.75)
         forward(1,3)
         move=0
         while move<2:
@@ -129,7 +129,7 @@ while greenValue<1:
     getWidth(pic)
     show(pic)
     if findColorSpot(pic,2):
-        motors(1,-1,.5)
+        motors(1,-1,1)
         forward(1,3)
         move=0
         while move<2:
@@ -141,7 +141,7 @@ while greenValue<1:
 sim.setPose(0, width/2, height/2, 0)
 
 while redValue<1:
-    motors(1,-1,.5)
+    motors(1,-1,1)
     pic= takePicture()
     getWidth(pic)
     show(pic)
@@ -158,7 +158,7 @@ while redValue<1:
 sim.setPose(0, width/2, height/2, 0)
 
 while yellowValue<1:
-    motors(1,-1,.5)
+    motors(1,-1,1)
     pic= takePicture()
     getWidth(pic)
     show(pic)
