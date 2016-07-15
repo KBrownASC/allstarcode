@@ -38,6 +38,8 @@ if cont == "Yes":
     print("you'll marry...",choice(wives))
     wait(1)
     print("you'll live in a...",choice(houses))
+    wait(2)
+    print("satisfied")
 elif cont == "No":
     wait(1)
     print("okay, you are gonna know anyway")
@@ -49,3 +51,5 @@ elif cont == "No":
     print("you'll marry...",choice(wives))
     wait(1)
     print("you'll live in a...",choice(houses))
+    wait(1)
+    print("Happy?")
