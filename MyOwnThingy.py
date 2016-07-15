@@ -17,7 +17,8 @@ def makeButton(sizes):
     shape.draw(win)
 
 
-
-
 win = Window("myStuff", 200, 200)
-makeButton(45)
+while getMouse():
+    makeButton(45)
+    
+    stop()
