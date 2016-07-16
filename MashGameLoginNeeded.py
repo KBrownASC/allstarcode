@@ -1,12 +1,10 @@
 from random import *
 from Myro import *
-from sys import exit
-
+from sys import *
 
 login=0
 atmp=0
 x=2    
-
 
 
 #Login and Password
@@ -38,15 +36,15 @@ while login<1:
             
 #Actual MASH Game
             
-wait(5)           
+wait(3)           
 print("WELCOME TO THE MASH GAME!")         
             
 newPet = raw_input("What will be your pet")
-print(newPet, "good luck")
+print(newPet, "is what you want")
 newJob = raw_input("What will be your job")
-print(newJob, "good luck")
+print(newJob, "is what you want")
 newWife= raw_input("Who will be your wife")
-print(newWife, "good luck")
+print(newWife, "is who you want")
 
 
 #input print
