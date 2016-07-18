@@ -4,6 +4,7 @@ from sys import *
 from time import *
 from random import *
 
+
 #define colors as variables here
 darkBlue = makeColor(5,5,5)
 
@@ -30,8 +31,7 @@ for pixel in pic:
         setColor(pixel,Red)
     elif getGray(pixel)<60:
         setColor(pixel,darkBlue)
-        
-        
-show(picture)
 
-print("change? I've never had change?")
+                                             
+show(picture)
+savePicture(picture, "newEditedPic.png") 
