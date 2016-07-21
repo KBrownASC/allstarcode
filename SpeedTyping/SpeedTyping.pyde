@@ -16,10 +16,16 @@ Alphabet = ["a", "b", "c", "d",
             "m", "n", "o", "p",
             "q", "r", "s", "t",
             "u", "v", "w", "x",
-            "y", "z"] 
+            "y", "z"]
+
 
 def setup():
+    global score
     background(0,80,255)
+    if score >= 30:
+        background(255,0,0)
+    if score >= 60:
+        background(255,0,255)
     size(800,400)
         
 
@@ -55,15 +61,16 @@ def draw():
             SpeedX=SpeedX+.5
             SpeedUp = 0
         score=score+1
-        y= randrange(10,380)
-        print(score)
+        y= randrange(20,380)
+    if score == 30:
+        background(255,0,0)
 
-    if score == 10:
-           Alphabet.extend("hello")
-           Alphabet.extend("bye")
-           Alphabet.extend("hard") 
         
     background(0,80,255)
+    if score >= 30:
+        background(255,0,0)
+    if score >= 60:
+        background(255,0,255)
     textSize(32)
     text(rLet,x,y)
     x = x + SpeedX
@@ -83,20 +90,22 @@ def draw():
     text(lose,750,20)
 
     textSize(10)
-    text("/3",770,20)
+    text("/5",770,20)
     
-    if lose == 3:
+    if lose == 5:
         background(1)
         textSize(40)
         text("YOU LOSE",300,200)
+        SpeedX = SpeedX - 1
         
-    if lose >= 5:
+    if lose >= 7:
         background(1)
         textSize(40)
         text("YOU LOST!!!!!!!!",250,200)
         text("click to restart",250,250)
-    if mousePressed:
+    if mousePressed and lose >= 7:
         background(220,220,0)
         score = 0
         lose = 0
+        SpeedX = 2
         x=0 
