@@ -2,7 +2,7 @@ from random import*
 from time import*
 
 
-x = 0
+x = -5
 y = 0
 score = 0
 lose = 0
@@ -11,6 +11,13 @@ SpeedUp = 0
 
 
 Alphabet = ["a", "b", "c", "d",
+            "e", "f", "g", "h",
+            "i", "j", "k", "l",
+            "m", "n", "o", "p",
+            "q", "r", "s", "t",
+            "u", "v", "w", "x",
+            "y", "z"]
+Alphabet2 = ["a", "b", "c", "d",
             "e", "f", "g", "h",
             "i", "j", "k", "l",
             "m", "n", "o", "p",
@@ -36,7 +43,7 @@ def setup():
     
 rLet= Alphabet[randrange(25)]
 y = randrange(20,380)
-  
+rLet2= Alphabet2[randrange(25)]  
  
 def draw():
     
@@ -47,7 +54,9 @@ def draw():
     global lose
     global SpeedX
     global SpeedUp
+    global rLet2
 
+#First Letter
     if x > 800:
         rLet = Alphabet[randrange(25)]
         x=0
@@ -74,8 +83,8 @@ def draw():
     textSize(32)
     text(rLet,x,y)
     x = x + SpeedX
-    
-    
+
+
     textSize(10)
     text("score",10,20)
     
