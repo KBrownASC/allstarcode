@@ -13,7 +13,7 @@ function draw(){
 	stroke(0,255,0)
 	rect(-1,-1,502,50)
 	stroke(0,255,0)
-	rect(-1,15s0,502,50)
+	rect(-1,150,502,50)
 	stroke(0,255,0)
 	rect(-1,250,502,50)
 	stroke(0,255,0)
@@ -30,4 +30,12 @@ function draw(){
 	
 	fill(0,0,0)
 	ellipse(ballx,bally,30,30)
+	if (keyIsDown(RIGHT_ARROW))
+		ballx+=5;
+	if (keyIsDown(LEFT_ARROW))
+		ballx-=5;
+	if (keyIsDown(UP_ARROW))
+		bally-=5;
+	if (keyIsDown(DOWN_ARROW))
+		bally+=5;
 }
