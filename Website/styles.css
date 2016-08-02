@@ -22,9 +22,16 @@ header {
         background: rgba(0,240,80,.9);
         color: solid white;
     }
+
+    @font-face {
+        font-family: FridayNightLights;
+        src: url(Control Panel\Appearance and Personalization\Fonts\FNL_DEMO-KCFonts.ttf);
+
+    }
     p {
       text-align: center;
-
+      font-family: Helvetica;
+      color: rgba(10,184,88,.95);
     }
     ul {
       background: rgba(0,0,0,.5);
@@ -32,7 +39,7 @@ header {
       margin: 100px 0px 0px 0px;
     }
     li {
-      text-align: center;
+      font-align: center;
       display: inline;
       padding: 0px 0px 0px 10px;
     }
