@@ -14,7 +14,17 @@ header {
     h1 {
       text-align:center;
       font-size: 60px;
+      background: rgba(1,1,1,.5);
       color: rgba(0,200,40,.8);
+    }
+    body {
+
+        background: rgba(0,240,80,.9);
+        color: solid white;
+    }
+    p {
+      text-align: center;
+
     }
     ul {
       background: rgba(0,0,0,.5);
