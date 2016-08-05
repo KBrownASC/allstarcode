@@ -7,6 +7,7 @@ html,body {
 header {
       background: url('http://cdn.lifebuzz.com/images/17001/lifebuzz-8f6bfa334fad6d7a58c50dfb3a2b08e8-limit_2000.gif');
       background-size: cover;
+      text-align: center;
       color: white;
       margin: 0;
       padding: 20px;
@@ -16,6 +17,13 @@ header {
       font-size: 60px;
       background: rgba(1,1,1,.5);
       color: rgba(0,200,40,.8);
+    }
+
+    h2 {
+      text-align:center;
+      font-size: 60px;
+      background: rgba(1,1,1,.5);
+      color: rgba(0,200,40,.8); 
     }
     body {
 
