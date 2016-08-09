@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CHALLENGEZ</title>
+<!-- LINK TO STYLE SHEET -->
+	<link rel="stylesheet" type="text/css" href="Styles.css">
+</head>
+<body>
+<div>
+<header>
+<!-- Empty div where the messages will show up -->
+
+    <input placeholder='POST' type='text' id='message'>
+    <!-- button for sending message to message board -->
+    <button onclick='sendMessage()' id='js'>Post Challenge</button>
+    <alert> POSTED </alert>
+
+    <!-- Paste your snippet here, will include firebase CDN -->
+    
+
+<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+	<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAB4l8ouE90w_inlgwWj-mY_G0wRrEqu1c",
+    authDomain: "onlinespacegame-878c2.firebaseapp.com",
+    databaseURL: "https://onlinespacegame-878c2.firebaseio.com",
+    storageBucket: "onlinespacegame-878c2.appspot.com",
+  };
+  firebase.initializeApp(config);
+	</script>
+</header>
+</div>
+
+<a href="App.html"><img src= "img/Button.png"></a>
+
+<!-- adding jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="Script.js"></script>
+</body>
+</html>

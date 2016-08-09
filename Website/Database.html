@@ -1,14 +1,26 @@
  <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Lulz ChatRoom</title>
+    <link href="/normalize.css" rel="stylesheet">
   </head>
   <body>
+      <ul>
+      <li><a href="index.html"><img src="images/Sword1.png" height="70" width="180"></a></li>
+      <li><a href="AboutMe.html"><img src="https://stuffizcool.files.wordpress.com/2011/04/round_glossy_green_button_by_fbouly1.png" height="80" width="80"></a></li>
+      <li><a href="Database.html"><img src="https://maxcdn.icons8.com/Share/icon/Logos//facebook_messenger1600.png" height="80" width="80"></a></li>
+      <li><a href="Database.html"><img src="https://maxcdn.icons8.com/Share/icon/Logos//facebook_messenger1600.png" height="80" width="80"></a></li>
+    </ul>
+
+    
+    <!-- Empty div where the messages will show up -->
+    <div id='messageBoard'></div>
+
     <!-- What user will use for input -->
     <input placeholder='Name' type='text' id='name'>
     <input placeholder='Message' type='text' id='message'>
     <!-- button for sending message to message board -->
-    <button onclick='sendMessage()' id='js'>Post Me!!</button>
-    <!-- Empty div where the messages will show up -->
-    <div id='messageBoard'></div>
+    <button onclick='sendMessage()' id='js'>Send</button>
     <!-- Paste your snippet here, will include firebase CDN -->
     
 <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
